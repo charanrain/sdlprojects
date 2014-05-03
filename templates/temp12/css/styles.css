@@ -1,0 +1,903 @@
+/* CSS Document */
+body,td,th {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+body {
+	margin-left:0;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	width:100%;
+	background:url(http://www.clouderp4.com/images/bg_shadow.gif) repeat-y top center #FFF;
+}
+
+
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+a:hover {
+	color: #F11437;
+	text-decoration: none;
+}
+a:active {
+	color: #333333;
+	text-decoration: none;
+}
+
+
+.fl{float:left;}
+.fr{float:right;}
+
+.mauto{margin:0 auto;}
+
+.main-wrap{
+	width:1120px; 
+	margin:0 auto;
+}
+
+.header{
+	margin:5px 0 0 0;
+}
+
+.tlinks-wrap{
+	width:;
+	margin:0;
+}
+
+#tlinks{
+	padding:0;
+	margin:0;
+}
+
+#tlinks li{
+	display: inline;
+	list-style-type: none;
+	padding:0 8px 0 8px;
+	margin:0;
+}
+
+#tlinks li a{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:;
+	font-size:11px;
+}
+
+#tlinks li a:hover{
+	color:#CCCCCC;
+	text-decoration:none;
+	font-weight:;
+}
+
+.contact-wrap{
+	height:15px;
+	margin:0;
+}
+.clear{clear:both;}
+/*main menu*/
+.menu{ width:; height:30px; margin:0 auto; position:relative; z-index:999;}
+.menu1 {padding:0; margin:2px 0 0 0; list-style:none; height:30px; position:relative; float:right;}
+.menu1 li.top {display:block; float:left;}
+.menu1 li a.top_link {display:block; float:left; height:30px; line-height:30px; color:#666666; text-decoration:none; font-size:15px; cursor:pointer; font-weight:bold;}
+.menu1 li a.top_link span {float:left; display:block; padding:0 10px 0 10px; height:30px;}
+.menu1 li a.top_link span.down {float:left; display:block; padding:0 10px 0 10px; height:30px; background:;}
+.menu1 li a.top_link:hover {color:#F11437;}
+.menu1 li a.top_link:hover span {background:;}
+.menu1 li a.top_link:hover span.down {background:#000;  color:#FFF;}
+
+.menu1 li:hover > a.top_link {color:#F11437; background:;}
+.menu1 li:hover > a.top_link span {background:;}
+.menu1 li:hover > a.top_link span.down {background:#000; color:#FFF;}
+.menu1 table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0;}
+
+/* Default link styling */
+
+/* Style the list OR link hover. Depends on which browser is used */
+
+.menu1 a:hover {visibility:visible; position:relative; z-index:200;}
+.menu1 li:hover {position:relative; z-index:200;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+.menu1 ul, 
+.menu1 :hover ul ul, 
+.menu1 :hover ul :hover ul ul,
+.menu1 :hover ul :hover ul :hover ul ul,
+.menu1 :hover ul :hover ul :hover ul :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+.menu1 :hover ul.sub {left:0; top:30px; color:#FFF; background:#000; padding:3px; white-space:nowrap; width:185px; height:auto; z-index:300; text-align:left; text-transform:none;}
+
+.menu1 :hover ul.sub li {display:block; height:25px; position:relative; float:left; width:185px; font-weight:normal; color:#FFF;}
+
+.menu1 :hover ul.sub li a {display:block; color:#FFF;  font-size:11px; height:25px; width:185px; line-height:25px; text-indent:5px; text-decoration:none; font-weight:bold;}
+
+.menu1 :hover ul.sub li a.fly {background:#FDB813 url(http://www.clouderp4.com/images/arrow_over.gif) 130px 9px no-repeat;}
+.menu1 :hover ul.sub li a:hover {background:#FFF; color:#333;}
+.menu1 :hover ul.sub li a.fly:hover {background:#FFF url(http://www.clouderp4.com/images/arrow.gif) 130px 9px no-repeat; color:#333;}
+.menu1 :hover ul li:hover > a.fly {background:#FFF url(http://www.clouderp4.com/images/arrow.gif) 130px 9px no-repeat; color:#333;} 
+.menu1 :hover ul :hover ul,
+.menu1 :hover ul :hover ul :hover ul,
+.menu1 :hover ul :hover ul :hover ul :hover ul,
+.menu1 :hover ul :hover ul :hover ul :hover ul :hover ul
+{left:140px; top:0; background:; padding:3px; white-space:nowrap; border-left:1px solid #818181; width:140px; z-index:400; height:auto;}
+
+.mid-bg{
+width:1120px; height:270px;
+margin:5px 0 0 0; 
+}
+
+#loopedSlider {width:1120px; position:relative; clear:both; text-align:left; float:left; margin-top:5px;}
+#loopedSlider .container { width:1120px; height:270px; overflow:hidden; position:relative;}
+#loopedSlider .slides { position:absolute; top:0; left:0; }
+#loopedSlider .slides div {	position:absolute; top:0; width:1120px; display:block;}
+
+ul.pagination { list-style-type:none; margin:240px 0 0 500px; padding:0; position:absolute; z-index:9;}
+ul.pagination li { float:left; margin:0 3px; display:inline; }
+ul.pagination a { display:block; width:12px; padding-top:12px; height:0; overflow:hidden; background-image:url(http://www.clouderp4.com/images/pagging.gif); background-position:0 0; background-repeat:no-repeat;}
+ul.pagination a:hover { background-position:0 -12px; }
+ul.pagination li.active a { background-position:0 -23px }
+
+#banner_txt{margin:70px 0 0 32px; position:absolute; z-index:800; float:left; width:300px;}
+.writeup{width:300px; font-size:18px; color:#FFFFFF;}
+
+#rlinks a{color:#FFFFFF; text-decoration:underline; font-size:15px; font-weight:bold;}
+#rlinks a:hover{color:#FFFFFF; text-decoration:none; font-size:15px; font-weight:bold;}
+
+
+
+.innermid-bg{
+	height:100px;
+	font-size:30px;
+	margin-top:5px;
+}
+
+.innermid-txt{
+	margin-left:20px;
+	margin:55px 0 0 15px;
+	position:absolute;
+	color:#FFF;
+	text-shadow:#404040 1px 1px 1px;
+}
+
+.mbg-txt-wrap{
+	margin-left:30px;
+	width:570px;
+	top:200px;
+	position:absolute;
+	z-index:999;
+	font-size:16px;
+	color:#FFFFFF;
+}
+
+.mbg-btns-wrap{
+	margin:170px 0 0 0px;
+	position:absolute;
+	width:500px;
+	z-index:99;
+}
+
+#tt a{
+	background:url(http://www.clouderp4.com/images/take-tour.gif) no-repeat;
+	width:175px;
+	height:42px;
+	display:block;
+	position:relative;
+}
+
+#tt a:hover{
+	background:url(http://www.clouderp4.com/images/take-tour-h.gif) no-repeat;
+	width:175px;
+	height:42px;
+	display:block;
+}
+
+#ti a{
+	background:url(http://www.clouderp4.com/images/tryit.gif) no-repeat;
+	width:164px;
+	height:42px;
+	display:block;
+	position:relative;
+}
+
+#ti a:hover{
+	background:url(http://www.clouderp4.com/images/tryit-h.gif) no-repeat;
+	width:164px;
+	height:42px;
+	display:block;
+}
+
+#web a{
+	background:url(http://www.clouderp4.com/images/btn_web.gif) no-repeat;
+	width:150px;
+	height:42px;
+	display:block;
+	position:relative;
+}
+
+#web a:hover{
+	background:url(http://www.clouderp4.com/images/btn_web-h.gif) no-repeat;
+	width:150px;
+	height:42px;
+	display:block;
+}
+
+
+#demo a{
+	background:url(http://www.clouderp4.com/images/btn_demo.png) no-repeat;
+	width:198px;
+	height:42px;
+	display:block;
+	position:relative;
+}
+#demo a:hover{
+	background:url(http://www.clouderp4.com/images/btn_demo-h.png) no-repeat;
+	width:198px;
+	height:42px;
+	display:block;
+}
+
+
+#rfq a{
+	background:url(http://www.clouderp4.com/images/btn_rfq.gif) no-repeat;
+	width:239px;
+	height:42px;
+	display:block;
+	position:relative;
+}
+#rfq a:hover{
+	background:url(http://www.clouderp4.com/images/btn_rfq-h.gif) no-repeat;
+	width:239px;
+	height:42px;
+	display:block;
+}
+
+#partner a{
+	background:url(http://www.clouderp4.com/images/btn_partner.gif) no-repeat;
+	width:211px;
+	height:42px;
+	display:block;
+	position:relative;
+}
+#partner a:hover{
+	background:url(http://www.clouderp4.com/images/btn_partner-h.gif) no-repeat;
+	width:211px;
+	height:42px;
+	display:block;
+}
+
+
+#raq a{
+	background:url(http://www.clouderp4.com/images/btn_raq-h.gif) no-repeat;
+	width:198px;
+	height:28px;
+	display:block;
+}
+#raq a:hover{
+	background:url(http://www.clouderp4.com/images/btn_raq.gif) no-repeat;
+	width:198px;
+	height:28px;
+	display:block;
+}
+
+
+.mr16{margin-right:18px;}
+.ml16{margin-left:18px;}
+.mr19{margin-right:19px;}
+
+.m5{margin:5px;}
+.mt5{margin-top:5px;}
+.mr5{margin-right:5px;}
+.mb5{margin-bottom:5px;}
+.ml5{margin-left:5px;}
+
+
+.m10{margin:10px;}
+.mt10{margin-top:10px;}
+.mr10{margin-right:10px;}
+.mb10{margin-bottom:10px;}
+.ml10{margin-left:10px;}
+
+.m15{margin:15px;}
+.mt15{margin-top:15px;}
+.mr15{margin-right:15px;}
+.mb15{margin-bottom:15px;}
+.ml15{margin-left:15px;}
+
+.m20{margin:20px;}
+.mt20{margin-top:20px;}
+.mr20{margin-right:20px;}
+.mb20{margin-bottom:20px;}
+.ml20{margin-left:20px;}
+
+
+.pl10{padding-left:10px;}
+.pr10{padding-right:10px;}
+
+
+.buttn-r{
+	background:#808080; 
+	color:#FFF; 
+	text-decoration:none;
+	padding:3px;
+	font-size:11px;
+	font-weight:bold;
+	cursor:pointer;
+	border:solid 1px #6E6E6E;
+	
+}
+
+.mid-cont-wrap{
+	margin:15px 10px 15px 10px;
+}
+
+.mid-cont-box{
+	width:221px;
+	height:260px;
+	background:url(http://www.clouderp4.com/images/cbox.jpg) no-repeat;
+}
+
+.grey-head{
+	font-size:15px;
+	font-weight:bold;
+	line-height:26px;
+	padding-left:5px;
+	color:#F11437;
+	white-space:nowrap;
+ }
+ 
+ .grey-head a{
+	color:#333333;
+ }
+
+ .grey-head a:hover{
+	color:#F11437;
+ }
+ 
+ .grey-head2{
+	font-size:12px;
+	padding:3px;
+	font-weight:bold;
+ }
+ 
+#cblinks{margin:12px 10px 8px 10px;}
+#cblinks ul{padding:0; margin:0;}
+#cblinks li{list-style:none; margin-bottom:7px;	padding:0 0 7px 25px; border-bottom:solid 1px #E5E5E5; text-align:left;}
+#cblinks li a{text-decoration:none;	color:#333;	font-size:12px;}
+#cblinks li a:hover{text-decoration:none; color:#F11437; font-size:12px;}
+#cblinks li.act{text-decoration:none; color:#F11437; font-size:12px;}
+#cblinks li.last{border-bottom:0; padding-bottom:0; margin-bottom:0;}
+
+#view a{
+	background:#F1173A; 
+	color:#FFF; 
+	text-decoration:none;
+	padding:3px;
+	font-size:10px;
+	margin-right:10px;
+	float:right;
+}
+
+#view a:hover{
+	background:#808080; 
+	color:#FFF; 
+	text-decoration:none;
+	padding:3px;
+	font-size:10px;
+	margin-right:10px;
+	float:right;
+}
+
+
+img.allbrands {
+margin:0; 
+float:right; 
+display:block; 
+}
+
+.brandrotator div.window {
+border-left: 1px solid #E5E5E5; 
+border-right: 1px solid #E5E5E5; 
+overflow: hidden;
+}
+
+.brandrotator ul li{
+line-height: 0px; 
+padding: 0 13px;
+} 
+
+.brandrotator img.prev {
+cursor: pointer; 
+position: absolute;
+margin-left:-5px; 
+margin-top:12px;
+}
+
+.brandrotator img.next {
+cursor: pointer; 
+margin-left:1074px; 
+position: absolute;
+margin-top:12px;
+}
+
+.brandrotator {
+display:block; 
+clear:both; 
+width:1100px;
+padding:0;
+margin:0 0 0 10px;
+}
+
+img{border:0;}
+
+.white-head{
+	font-size:16px;
+	font-weight:bold;
+	line-height:26px;
+	color:#FFF;
+ }
+
+#footer-wrap{
+   background:url(http://www.clouderp4.com/images/fbg.gif) repeat-x  #676767 top center;
+}
+
+.f-divied{background:url(http://www.clouderp4.com/images/f-divied.gif) repeat-y top center; width:43px;}
+.f-divied-v{background:url(http://www.clouderp4.com/images/dbl-bor-h.gif) repeat-x; height:2px; line-height:2px;}
+
+.footer_bg{
+background:url(http://www.clouderp4.com/images/fbg1.gif) no-repeat top center;
+}
+
+.wtxt11{
+	font-size:11px;
+	color:#FFF;
+}
+
+.wtxt{
+	color:#FFF;
+}
+
+.hd1{color:#F11437; font-weight:bold;}
+
+.wlinks:link{color:#FFF; text-decoration:none; font-weight:bold;}
+.wlinks:visited{color:#FFF; text-decoration:none; font-weight:bold;}
+.wlinks:hover{color:#CCC; text-decoration:none; font-weight:bold;}
+.wlinks:active{color:#FFF; text-decoration:none; font-weight:bold;}
+
+.head{font-size:15px; font-weight:bold;}
+.head22{font-size:15px; font-weight:bold; color:#F11437}
+
+.headl:link{font-size:15px; font-weight:bold;}
+.headl:visited{font-size:15px; font-weight:bold;}
+.headl:hover{font-size:15px; font-weight:bold; color:#F11437;}
+.headl:active{font-size:15px; font-weight:bold;}
+
+.box{background:#F0F0F0; border-bottom:1px solid #DADADA; cursor:pointer;}
+.boxh{background:#DADADA; border-bottom:1px solid #DADADA; cursor:pointer;}
+
+#features{ border-bottom:1px solid #EAEAEA; padding:10px 0 15px 0; text-align:left; line-height:0.45cm;}
+#features .img{ float:left; margin-right:10px}
+#features .img1{ float:right; margin-left:10px}
+#features .head{ font-size:14px; color:#333333; font-weight:bold;}
+
+
+.mid-cont-box1{
+	width:228px;
+	height:200px;
+	background:url(http://www.clouderp4.com/images/cbox.jpg) no-repeat;
+}
+
+
+#cbl{margin:0 10px 8px 10px;}
+#cbl ul{padding:0; margin:0;}
+#cbl li{list-style:none; margin-bottom:7px;	padding:0 0 7px 5px; border-bottom:solid 1px #E5E5E5; text-align:left;}
+#cbl li a{text-decoration:none;	color:#333;	font-size:12px;}
+#cbl li a:hover{text-decoration:none; color:#F11437; font-size:12px;}
+#cbl li.last{border-bottom:0; padding-bottom:0;	margin-bottom:0;}
+
+
+#btn_vd a{
+background:url(http://www.clouderp4.com/images/btn_view-demo.gif) no-repeat top;
+height:62px;
+width:210px;
+display:block;
+}
+
+#btn_vd a:hover {
+background:url(http://www.clouderp4.com/images/btn_view-demo-h.gif) no-repeat top;
+height:62px;
+width:210px;
+display:block;
+}
+#btn_vd a.act{
+background:url(http://www.clouderp4.com/images/btn_view-demo-h.gif) no-repeat top;
+height:62px;
+width:210px;
+display:block;
+}
+
+
+#btn_ps a{
+background:url(http://www.clouderp4.com/images/btn_product-ss.gif) no-repeat top;
+height:62px;
+width:210px;
+display:block;
+}
+
+#btn_ps a:hover {
+background:url(http://www.clouderp4.com/images/btn_product-ss-h.gif) no-repeat top;
+height:62px;
+width:210px;
+display:block;
+}
+
+#btn_ps a.act{
+background:url(http://www.clouderp4.com/images/btn_product-ss-h.gif) no-repeat top;
+height:62px;
+width:210px;
+display:block;
+}
+
+
+#fade_bg{
+	background:url(http://www.clouderp4.com/images/testi_bg.gif) no-repeat top center;
+	width:210px;
+	height:172px;
+	margin-top:15px;
+}
+
+
+#fade {
+	list-style:none;
+	padding:40px 0 0 0;
+	margin:0 0 0 10px; 
+	width:190px;
+}
+
+
+.topicns {padding:0; float:right;}
+.topicns span.icns{float:right; width:25px; height:25px; margin-right:5px;}
+
+.top_bg{background:url(http://www.clouderp4.com/images/strip-m.gif) repeat-x top center; height:28px;}
+
+.input_bg{
+background:url(http://www.clouderp4.com/images/input_bg.gif) repeat-x top center #FFFFFF;
+padding:2px;
+border:1px solid #404040;
+color:#666666;
+height:16px;
+font-size:11px;
+}
+
+.input_txt{
+background:url(http://www.clouderp4.com/images/input_bg.gif) repeat-x top center #FFFFFF;
+padding:2px;
+border:1px solid #404040;
+color:#666666;
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.cl-brd{border:1px solid #E5E5E5; padding:2px;}
+
+.rbrd{border-right:1px solid #E5E5E5;}
+
+.bbrd{border-bottom:1px solid #E5E5E5;}
+
+.bbrd1{border-bottom:1px solid #ADADAD;}
+
+.rdbrd {border:1px solid #E5E5E5; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+
+.gry11{color:#666; font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+.red11{color:#FF0000; font-size:11px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+.inpg{
+padding:2px;
+border:1px solid #CACACA;
+color:#333;
+background:#FFFFFF;
+}
+
+
+.ip_bg{background:url(http://www.clouderp4.com/images/ip_bg-t.gif) no-repeat top center; width:210px;}
+.ip_bg-b{background:url(http://www.clouderp4.com/images/ip_bg-b.gif) no-repeat top center; width:210px; height:32px;}
+
+
+a:focus{outline:none;}
+
+
+.more:link{color:red; text-decoration:none; font-weight:bold;}
+.more:visited{color:red; text-decoration:none; font-weight:bold;}
+.more:hover{color:#000000; text-decoration:none; font-weight:bold;}
+.more:active{color:red; text-decoration:none; font-weight:bold;}
+
+
+#btn_bd a{background:url(http://www.clouderp4.com/images/btn_apps.gif) no-repeat 0 0; height:62px; width:210px; display:block;}
+#btn_bd a:hover{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 0; height:62px; width:210px; display:block;}
+#btn_bd a.act{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 0; height:62px; width:210px; display:block;}
+
+#btn_oa a{background:url(http://www.clouderp4.com/images/btn_apps.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_oa a:hover{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_oa a.act{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+
+#btn_ca a{background:url(http://www.clouderp4.com/images/btn_apps.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+#btn_ca a:hover{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+#btn_ca a.act{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+
+#btn_ea a{background:url(http://www.clouderp4.com/images/btn_apps.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+#btn_ea a:hover{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+#btn_ea a.act{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+
+#btn_ip a{background:url(http://www.clouderp4.com/images/btn_apps.gif) no-repeat 0 -248px; height:62px; width:210px; display:block;}
+#btn_ip a:hover{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 -248px; height:62px; width:210px; display:block;}
+#btn_ip a.act{background:url(http://www.clouderp4.com/images/btn_apps-h.gif) no-repeat 0 -248px; height:62px; width:210px; display:block;}
+
+#tab_bd a{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat 0 0; height:62px; width:172px; display:block;}
+#tab_bd a:hover{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat 0 -62px; height:62px; width:172px; display:block;}
+#tab_bd a.act{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat 0 -62px; height:62px; width:172px; display:block;}
+
+#tab_oa a{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -172px 0; height:62px; width:172px; display:block;}
+#tab_oa a:hover{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -172px -62px; height:62px; width:172px; display:block;}
+#tab_oa a.act{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -172px -62px; height:62px; width:172px; display:block;}
+
+#tab_ca a{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -344px 0; height:62px; width:172px; display:block;}
+#tab_ca a:hover{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -344px -62px; height:62px; width:172px; display:block;}
+#tab_ca a.act{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -344px -62px; height:62px; width:172px; display:block;}
+
+#tab_ea a{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -516px 0; height:62px; width:172px; display:block;}
+#tab_ea a:hover{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -516px -62px; height:62px; width:172px; display:block;}
+#tab_ea a.act{background:url(http://www.clouderp4.com/images/tabs.gif) no-repeat -516px -62px; height:62px; width:172px; display:block;}
+
+#btn_hr a{background:url(http://www.clouderp4.com/images/btns_hr.gif) no-repeat 0 0; height:62px; width:210px; display:block;}
+#btn_hr a:hover{background:url(http://www.clouderp4.com/images/btns_hr.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_hr a.act{background:url(http://www.clouderp4.com/images/btns_hr.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+
+
+#demo-pro a{
+	background:#F1173A; 
+	color:#FFF; 
+	text-decoration:none;
+	padding:3px 5px 3px 5px;
+	font-size:11px;
+	font-weight:bold;
+}
+
+#demo-pro a:hover{
+	background:#808080; 
+	color:#FFF; 
+	text-decoration:none;
+	padding:3px 5px 3px 5px;
+	font-size:11px;
+	font-weight:bold;
+}
+
+
+#nav{margin:0 10px 8px 10px;}
+#nav ul{padding:0; margin:0;}
+#nav li{list-style:none; margin:0;	padding:5px 0 5px 0; border-bottom:solid 1px #E5E5E5; text-align:left;}
+#nav li a{text-decoration:none;	color:#333;	font-size:12px;}
+#nav li a:hover{text-decoration:none; color:#F11437; font-size:12px;}
+#nav li.last{border-bottom:0; padding-bottom:0;	margin-bottom:0;}
+
+.nav_bg{background:url(http://www.clouderp4.com/images/nav_bg.gif) no-repeat top center; width:200px;}
+.nav_bg-b{background:url(http://www.clouderp4.com/images/nav_bg-b.gif) no-repeat bottom center; width:200px; height:4px;}
+
+
+
+#video{width:300px; }
+#video li{list-style-type:none; padding:5px; margin-top:5px; background-color:#CCCCCC;}
+#video li .head{margin-bottom:5px;}
+#video li .head a{font-size:13px; font-weight:bold; color:red;}
+#video li .head a:hover{color:green;}
+#video li span{ font-size:11px; color:#666666;}
+#video li img{float:left; padding-right:10px;}
+
+
+#btn_evm a{background:url(http://www.clouderp4.com/images/btns_iw_s1.gif) no-repeat 0 0; height:62px; width:210px; display:block;}
+#btn_evm a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s1-h.gif) no-repeat 0 0; height:62px; width:210px; display:block;}
+#btn_evm a.act{background:url(http://www.clouderp4.com/images/btns_iw_s1-h.gif) no-repeat 0 0; height:62px; width:210px; display:block;}
+
+#btn_hsm a{background:url(http://www.clouderp4.com/images/btns_iw_s1.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_hsm a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s1-h.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_hsm a.act{background:url(http://www.clouderp4.com/images/btns_iw_s1-h.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+
+#btn_mde a{background:url(http://www.clouderp4.com/images/btns_iw_s1.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+#btn_mde a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s1-h.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+#btn_mde a.act{background:url(http://www.clouderp4.com/images/btns_iw_s1-h.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+
+#btn_mi a{background:url(http://www.clouderp4.com/images/btns_iw_s1.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+#btn_mi a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s1-h.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+#btn_mi a.act{background:url(http://www.clouderp4.com/images/btns_iw_s1-h.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+
+#btn_res a{background:url(http://www.clouderp4.com/images/btns_iw_s2.gif) no-repeat 0 0px; height:62px; width:210px; display:block;}
+#btn_res a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s2-h.gif) no-repeat 0 0px; height:62px; width:210px; display:block;}
+#btn_res a.act{background:url(http://www.clouderp4.com/images/btns_iw_s2-h.gif) no-repeat 0 0px; height:62px; width:210px; display:block;}
+
+#btn_cnt a{background:url(http://www.clouderp4.com/images/btns_iw_s2.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_cnt a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s2-h.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_cnt a.act{background:url(http://www.clouderp4.com/images/btns_iw_s2-h.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+
+#btn_rtl a{background:url(http://www.clouderp4.com/images/btns_iw_s2.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+#btn_rtl a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s2-h.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+#btn_rtl a.act{background:url(http://www.clouderp4.com/images/btns_iw_s2-h.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+
+#btn_sc a{background:url(http://www.clouderp4.com/images/btns_iw_s2.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+#btn_sc a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s2-h.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+#btn_sc a.act{background:url(http://www.clouderp4.com/images/btns_iw_s2-h.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+
+#btn_crt a{background:url(http://www.clouderp4.com/images/btns_iw_s3.gif) no-repeat 0 0px; height:62px; width:210px; display:block;}
+#btn_crt a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s3-h.gif) no-repeat 0 0px; height:62px; width:210px; display:block;}
+#btn_crt a.act{background:url(http://www.clouderp4.com/images/btns_iw_s3-h.gif) no-repeat 0 0px; height:62px; width:210px; display:block;}
+
+#btn_iti a{background:url(http://www.clouderp4.com/images/btns_iw_s3.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_iti a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s3-h.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+#btn_iti a.act{background:url(http://www.clouderp4.com/images/btns_iw_s3-h.gif) no-repeat 0 -62px; height:62px; width:210px; display:block;}
+
+#btn_bcc a{background:url(http://www.clouderp4.com/images/btns_iw_s3.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+#btn_bcc a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s3-h.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+#btn_bcc a.act{background:url(http://www.clouderp4.com/images/btns_iw_s3-h.gif) no-repeat 0 -124px; height:62px; width:210px; display:block;}
+
+#btn_hip a{background:url(http://www.clouderp4.com/images/btns_iw_s3.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+#btn_hip a:hover{background:url(http://www.clouderp4.com/images/btns_iw_s3-h.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+#btn_hip a.act{background:url(http://www.clouderp4.com/images/btns_iw_s3-h.gif) no-repeat 0 -186px; height:62px; width:210px; display:block;}
+
+
+.forms{border-bottom: solid 3px #FFF;}
+
+
+.forms {	width:px;}
+.forms td  {background-color: #f3f3f3;	border-bottom: solid 3px #FFF;	padding-left:10px;	padding-right:10px;	line-height:1.0;height: 32px;}
+.forms .left {background-color:#e7e7e7;	width: 245px; font-size:16px;	font-weight: bold;	}
+
+.fbrdr { border:2px solid #E5E5E5; }
+.inputd {border:#cdcdcd 1px solid; padding:5px 0px 0px 5px; font-size:14px; color:#666666;  font-style:italic; height:22px;}
+.selectd {border: #cdcdcd 1px solid; padding:3px 0 2px 0px; font-size:14px; color:#666666; height:29px; font-style:italic;}
+
+#browsefile{float:left; margin:5px 0 5px 0;}
+
+#checkbox {padding:0; margin:0; clear:both;}
+#checkbox span.check{float:left; width:25px; float:left;}
+#checkbox span.txt{text-align:left; margin:0; padding:2px 0 0 0; line-height:0.4cm;}
+
+.count{font-family:"Trebuchet MS"; font-size:20px; color:#00538D;}
+
+.buttn-0rng{
+background:#FF974A; 
+color:#FFF; 
+text-decoration:none;
+padding:3px;
+font-size:11px;
+font-weight:bold;
+cursor:pointer;
+border:solid 1px #E3792B;
+}
+
+
+.fhbrdr{border-bottom:1px solid #4E4E4E;}
+
+.contsubhead1{font-size:12px; color:#00538D; font-weight:bold}
+.contsubhead2{font-size:12px; color:#FF6000; font-weight:bold}
+.contsubhead3{font-size:12px; color:#333333; font-weight:bold}
+
+.content-link:link{font-weight:bold; color: #00538D; text-decoration:none; text-decoration:underline}
+.content-link:visited{font-weight:bold; color:#00538D; text-decoration:none; text-decoration:underline}
+.content-link:hover{font-weight:bold; color: #FF6000; text-decoration:none; text-decoration:underline}
+.content-link:active{font-weight:bold; color:#00538D; text-decoration:none; text-decoration:underline}
+
+
+#cbtn_rfq a{background:url(http://www.clouderp4.com/images/cbtns.gif) no-repeat 0 0; display:block; width:230px; height:45px;}
+#cbtn_rfq a:hover{background:url(http://www.clouderp4.com/images/cbtns.gif) no-repeat 0 -45px; display:block; width:230px; height:45px;}
+#cbtn_dm a{background:url(http://www.clouderp4.com/images/cbtns.gif) no-repeat -230px 0; display:block; width:230px; height:45px;}
+#cbtn_dm a:hover{background:url(http://www.clouderp4.com/images/cbtns.gif) no-repeat -230px -45px; display:block; width:230px; height:45px;}
+#cbtn_pa a{background:url(http://www.clouderp4.com/images/cbtns.gif) no-repeat -460px 0; display:block; width:230px; height:45px;}
+#cbtn_pa a:hover{background:url(http://www.clouderp4.com/images/cbtns.gif) no-repeat -460px -45px; display:block; width:230px; height:45px;}
+
+#cbtnv_rfq a{background:url(http://www.clouderp4.com/images/cbtn_vertical.png) no-repeat 0 0; display:block; width:210px; height:45px;}
+#cbtnv_rfq a:hover{background:url(http://www.clouderp4.com/images/cbtn_vertical.png) no-repeat 0 -45px; display:block; width:210px; height:45px;}
+#cbtnv_dm a{background:url(http://www.clouderp4.com/images/cbtn_vertical.png) no-repeat -210px 0; display:block; width:210px; height:45px;}
+#cbtnv_dm a:hover{background:url(http://www.clouderp4.com/images/cbtn_vertical.png) no-repeat -210px -45px; display:block; width:210px; height:45px;}
+#cbtnv_pa a{background:url(http://www.clouderp4.com/images/cbtn_vertical.png) no-repeat -420px 0; display:block; width:210px; height:45px;}
+#cbtnv_pa a:hover{background:url(http://www.clouderp4.com/images/cbtn_vertical.png) no-repeat -420px -45px; display:block; width:210px; height:45px;}
+
+
+#pack_oa a{background:url(http://www.clouderp4.com/images/packs.png) no-repeat 0 0; overflow:hidden; width:126px; height:130px; display:block;}
+#pack_bd a{background:url(http://www.clouderp4.com/images/packs.png) no-repeat 0 -130px; overflow:hidden; width:126px; height:130px; display:block;}
+#pack_ec a{background:url(http://www.clouderp4.com/images/packs.png) no-repeat 0 -260px; overflow:hidden; width:126px; height:130px; display:block;}
+#pack_ga a{background:url(http://www.clouderp4.com/images/packs.png) no-repeat 0 -390px; overflow:hidden; width:126px; height:130px; display:block;}
+#pack_hr a{background:url(http://www.clouderp4.com/images/packs.png) no-repeat 0 -520px; overflow:hidden; width:126px; height:130px; display:block;}
+
+.plink:link{font-weight:bold; color:#F11437; text-decoration:none; text-decoration:none}
+.plink:visited{font-weight:bold; color:#F11437; text-decoration:none; text-decoration:none}
+.plink:hover{font-weight:bold; color:#000000; text-decoration:none; text-decoration:none}
+.plink:active{font-weight:bold; color:#F11437; text-decoration:none; text-decoration:none}
+
+.pack{border:1px solid #FFFFFF; padding:5px; text-align:left; cursor:pointer;}
+.packh{border:1px solid #DADADA; background:#F0F0F0; padding:5px; text-align:left; cursor:pointer}
+.pack a{color:#F11437; font-weight:bold;}
+.packh a{color:#000000; font-weight:bold;}
+#act{border:1px solid #DADADA; background:#F0F0F0; padding:5px; text-align:left; cursor:pointer}
+
+
+
+.f11{font-size:11px;}
+
+#cbox{width:216px;}
+#cbox .top{background:url(http://www.clouderp4.com/images/cbox-t.gif) no-repeat top center; width:216px; padding-top:10px;}
+#cbox .bottom{width:216px; height:18px; background:url(http://www.clouderp4.com/images/cbox-b.gif) no-repeat top center;}
+
+
+#cboxlinks{margin:10px 10px 0 10px;}
+#cboxlinks ul{padding:0; margin:0;}
+#cboxlinks li{list-style:none; margin-bottom:7px;	padding:0 0 7px 25px; border-bottom:solid 1px #E5E5E5; text-align:left;}
+#cboxlinks li a{text-decoration:none;	color:#333;	font-size:12px;}
+#cboxlinks li a:hover{text-decoration:none; color:#F11437; font-size:12px;}
+#cboxlinks li.act{text-decoration:none; color:#F11437; font-size:12px;}
+#cboxlinks li.last{border-bottom:0; padding-bottom:0; margin-bottom:0;}
+#cboxlinks li span a{font-size:10px; background:#F1173A; color:#FFFFFF; padding:3px;}
+#cboxlinks li span a:hover{font-size:10px; background:#808080; color:#FFFFFF; padding:3px;}
+
+.testi_bg_tab{background:url(http://www.clouderp4.com/images/testi_bg_tab.gif) no-repeat top center; height:44px;}
+.testi_bg_tab2{background:url(http://www.clouderp4.com/images/testi_bg_tab2.gif) no-repeat top center; height:44px;}
+
+.testi_brdr{
+border:1px solid #E5E5E5; 
+border-top:none;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+.testi_head{color:#FFF; font-size:15px; margin:12px 0 0 70px;}
+
+#bnrbtn_dm span{background:url(http://www.clouderp4.com/images/banner_btns.gif) no-repeat 0 0; display:block; width:57px; height:67px; color:#FFF; font-weight:bold;}
+#bnrbtn_dm a{display:block; color:#FFF; font-weight:bold; width:110px;}
+#bnrbtn_dm a:hover{color:#000;}
+
+#bnrbtn_rfq span{background:url(http://www.clouderp4.com/images/banner_btns.gif) no-repeat -57px 0; display:block; width:57px; height:67px; color:#FFF; font-weight:bold;}
+#bnrbtn_rfq a{display:block; color:#FFF; font-weight:bold; width:110px;}
+#bnrbtn_rfq a:hover{color:#000;}
+
+#bnrbtn_part span{background:url(http://www.clouderp4.com/images/banner_btns.gif) no-repeat -114px 0; display:block; width:57px; height:67px; color:#FFF; font-weight:bold;}
+#bnrbtn_part a{display:block; color:#FFF; font-weight:bold; width:110px;}
+#bnrbtn_part a:hover{color:#000;}
+
+#bnrbtn_pro span{background:url(http://www.clouderp4.com/images/banner_btns.gif) no-repeat -171px 0; display:block; width:57px; height:67px; color:#FFF; font-weight:bold;}
+#bnrbtn_pro a{display:block; color:#FFF; font-weight:bold; width:110px;}
+#bnrbtn_pro a:hover{color:#000;}
+
+
+
+#termsdiv{padding:0; text-align:left; border-bottom:1px solid #E5E5E5; margin:0 0 5px 0;}
+#termsdiv a{background:url(http://www.clouderp4.com/images/arrow.png) no-repeat 0 4px; padding:0 0 0 10px; color:#F11437; font-weight:bold;}
+#termsdiv a:hover{color:#000000; font-weight:bold;}
+#termsdiv .f11 a{text-decoration:underline; font-size:11px; background:none; padding:0; font-weight:normal; color:#000;}
+#termsdiv .f11 a:hover{color:#F11437; text-decoration:none; font-size:11px;}
+
+.p-bg{background:url(http://www.clouderp4.com/images/p-bg.gif) no-repeat top center;}
+
+#navbbn_rfq a{background:url(http://www.clouderp4.com/images/nav_btn.gif) no-repeat 0 0; display:block; width:130px; height:32px; margin-top:-9px;}
+#navbbn_rfq a:hover{background:url(http://www.clouderp4.com/images/nav_btn.gif) no-repeat 0 -32px; display:block; width:130px; height:32px; margin-top:-9px;}
+
+#navbbn_dm a{background:url(http://www.clouderp4.com/images/nav_btn.gif) no-repeat -130px 0; display:block; width:109px; height:32px; margin-top:-9px;}
+#navbbn_dm a:hover{background:url(http://www.clouderp4.com/images/nav_btn.gif) no-repeat -130px -32px; display:block; width:109px; height:32px; margin-top:-9px;}
+
+#navbbn_pa a{background:url(http://www.clouderp4.com/images/nav_btn.gif) no-repeat -239px 0; display:block; width:113px; height:32px; margin-top:-9px;}
+#navbbn_pa a:hover{background:url(http://www.clouderp4.com/images/nav_btn.gif) no-repeat -239px -32px; display:block; width:113px; height:32px; margin-top:-9px;}
+
+.rns_inputd {BORDER: #cdcdcd 1px solid; PADDING: 5px 0px 0px 5px; FONT-SIZE: 14px; COLOR: #666666; FONT-STYLE: italic; HEIGHT: 22px}
+.rns_inputr {BORDER: #FF9900 1px solid; PADDING: 5px 0px 0px 5px; FONT-SIZE: 14px; COLOR: #000000; HEIGHT: 22px}
+.rns_inputdbold {BORDER: #cdcdcd 1px solid; PADDING: 3px 0px 0px 3px; FONT-SIZE: 16px;font-family:"Trebuchet MS"; font-weight:bold; COLOR: #666666; FONT-STYLE: italic; HEIGHT: 22px}
+.rns_inputrbold {BORDER: #FF9900 1px solid; PADDING: 3px 0px 0px 3px; FONT-SIZE: 16px;font-family:"Trebuchet MS"; font-weight:bold; COLOR: #333333; HEIGHT: 22px}
+.rns_textaread {BORDER: #cdcdcd 1px solid; overflow:auto;  PADDING: 5px 0px 0px 5px; FONT-SIZE: 14px; COLOR: #666666; FONT-STYLE: italic;}
+.rns_textarear {BORDER: #FF9900 1px solid; overflow:auto; PADDING: 5px 0px 0px 5px; FONT-SIZE: 14px; COLOR: #000000;}
+.rns_selectd { BORDER: #cdcdcd 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 3px;FONT-SIZE: 14px; COLOR: #666666; HEIGHT: 29px;FONT-STYLE: italic; }
+.rns_selectr { BORDER: #FF9900 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 3px;FONT-SIZE: 14px; COLOR: #000000; HEIGHT: 29px; }
+

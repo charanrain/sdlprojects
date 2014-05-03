@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Endymion HTML Template</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Stylesheets Files       // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/framework.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/media.css"/>
+<link rel="stylesheet" href="css/layerslider.css"/>
+<link rel="stylesheet" href="css/noscript.css" media="screen,all" id="noscript"/>
+<link rel="stylesheet" href="css/font-awesome.css">
+  
+<!-- ////////////////////////////////// -->
+<!-- //     Google Webfont Files     // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
+<script src="js/layerslider.kreaturamedia.jquery.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/tinynav.min.js"></script>
+<script src="js/jquery.fancybox.js?v=2.0.6"></script>
+<script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
+<script src="js/jquery.ui.totop.min.js"></script>
+<script src="js/ddaccordion.js"></script>
+<script src="js/jquery.twitter.js"></script>
+<script src="js/jflickrfeed.min.js"></script>
+<script src="js/faq-functions.js" ></script>
+<script src="js/theme-functions.js"></script>
+<script src="js/jquery.retina.js"></script>
+<script>
+$(document).ready(function() {
+//Retina Image
+$('img.retina').retina('@2x');
+
+//LayerSlider Settings
+$('#layerslider').layerSlider({
+	skinsPath : 'images/layerslider_skins/',
+	skin : 'borderlessdark',
+	slideDelay	: 5000,
+	slideDirection	: 'bottom',
+	thumbnailNavigation : false,
+	navButtons	: false,
+	navStartStop : false,
+	navPrevNext	: true,		
+	hoverPrevNext : true,
+	pauseOnHover : false,
+	responsive : true
+});
+
+//Footer Equal Height
+equalHeight($(".footer-column, .footer-logo"));
+});
+
+function equalHeight(group) {
+  tallest = 0;
+  group.each(function() {
+	  thisHeight = $(this).height();
+	  if(thisHeight > tallest) {
+		  tallest = thisHeight;
+	  }
+  });
+  group.height(tallest);
+}
+</script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body>
+
+<div id="main-wrapper">
+
+	<!-- header start here -->
+	<header>
+    	<!-- logo start here -->
+    	<div id="logo">
+        	<a href="index.html"><img src="images/logo.png" alt="main-logo" class="retina"/></a>
+        	<p>the simple and clean design</p>
+        </div>
+        <!-- logo end here -->
+        
+        <!-- top information start here -->
+        <div id="top-info">
+        	<ul>
+            	<li>
+                	<p>Hotline services</p>
+                    <img src="images/top_info1.png" alt="" class="retina" /><br/>
+                    <p class="info-text">0444 5648 91011</p>
+                </li>
+                <li>
+                	<p>Customer email</p>
+                    <img src="images/top_info2.png" alt="" class="retina" /><br/>
+                    <p class="info-text">cs@endymion.net</p>
+                </li>
+            </ul>
+        </div>
+        <!-- top information end here -->
+        
+        <div id="mainmenu-wrapper">
+        	<!-- mainmenu start here -->
+            <nav id="mainmenu">
+                <ul id="menu">
+                    <li class="dropdown selected"><a href="index.html">Home</a>
+                        <ul> 
+                            <li><a href="index-layout2.html"><span>-</span> home layout 2</a></li>
+                            <li><a href="index-layout3.html"><span>-</span> home layout 3</a></li>
+                            <li><a href="index-layout4.html"><span>-</span> home layout 4</a></li>    	
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown"><a href="#">Portfolio</a>
+                        <ul> 
+                            <li><a href="portfolio-2col.html"><span>-</span> portfolio 2 column</a></li>
+                            <li><a href="portfolio-3col.html"><span>-</span> portfolio 3 column</a></li>
+                            <li><a href="portfolio-4col.html"><span>-</span> portfolio 4 column</a>
+                            	<ul> 
+                                    <li><a href="#"><span>-</span> dropdown level 2</a></li>
+                                    <li><a href="#"><span>-</span> dropdown level 2</a></li>
+                                    <li><a href="#"><span>-</span> dropdown level 2</a>
+                                    	<ul> 
+                                            <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                            <li><a href="#"><span>-</span> dropdown level 3</a></li>
+                                            <li><a href="#"><span>-</span> dropdown level 3</a></li>    	
+                                        </ul>
+                                    </li>    	
+                                </ul>
+                            </li>    	
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Blog</a>
+                    	<ul> 
+                            <li><a href="blog-right-sidebar.html"><span>-</span> blog right sidebar</a></li>
+                            <li><a href="blog-left-sidebar.html"><span>-</span> blog left sidebar</a></li>
+                            <li><a href="single-right-sidebar.html"><span>-</span> single right sidebar</a></li> 
+                            <li><a href="single-left-sidebar.html"><span>-</span> single left sidebar</a></li>   	
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown"><a href="#">Pages</a>
+                        <ul> 
+                            <li><a href="column.html"><span>-</span> column page</a></li>
+                            <li><a href="tables.html"><span>-</span> table page</a></li>
+                            <li><a href="button-list.html"><span>-</span> button &amp; list page</a></li>
+                            <li><a href="icons.html"><span>-</span> glyphicons page</a></li>
+                            <li><a href="typhography.html"><span>-</span> typhography page</a></li>
+                            <li><a href="testimonials.html"><span>-</span> testimonials page</a></li>  
+                            <li><a href="pricing.html"><span>-</span> pricing page</a></li>
+                            <li><a href="faq.html"><span>-</span> faq page</a></li>
+                            <li><a href="team.html"><span>-</span> team page</a></li>
+                            <li><a href="services-layout2.html"><span>-</span> services layout alt</a></li>
+                            <li><a href="contact-layout2.html"><span>-</span> contact layout alt</a></li>
+                            <li><a href="sitemap.html"><span>-</span> sitemap page</a></li>
+                            <li><a href="fullwidth.html"><span>-</span> fullwidth page</a></li>
+                            <li><a href="404.html"><span>-</span> 404 page</a></li>                           	
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- mainmenu end here -->
+            
+            <!-- top socials start here -->
+            <div id="top-socials">
+                <ul class="socials-list">
+                    <li><a href="#" title="facebook" class="tooltip"><img src="images/socials/facebook.png" alt="" class="retina" /></a></li>
+                    <li><a href="#" title="twitter" class="tooltip"><img src="images/socials/twitter.png" alt="" class="retina" /></a></li>
+                    <li><a href="#" title="dribbble" class="tooltip"><img src="images/socials/dribbble.png" alt="" class="retina" /></a></li>
+                    <li><a href="#" title="google+" class="tooltip"><img src="images/socials/google+.png" alt="" class="retina" /></a></li>
+                    <li><a href="#" title="rss" class="tooltip"><img src="images/socials/rss.png" alt="" class="retina" /></a></li>
+                </ul>
+            </div>
+            <!-- top socials end here -->
+        </div>
+    </header>
+    <!-- header end here -->
+    
+    <!-- slideshow start here -->	
+    <section id="layerslider-container">			
+        <div id="layerslider" style="width:960px; height:450px; margin:0 auto;">    
+            
+            <div class="ls-layer">
+            	<!--LayerSlider background-->								
+                <img class="ls-bg" src="images/slideshow/ls_bg1.jpg" alt="">    
+                
+                <img class="ls-s2" src="images/slideshow/ls_img1.png" alt="" style="position: absolute; top: 82px; left: 59px; slidedirection : top; slideoutdirection : left;  delayin : 500; showuntil : 3200;">
+                <h1 class="ls-s3 ls-heading" style="position: absolute; top:146px; left: 532px; slidedirection : bottom; slideoutdirection : left; durationin : 1000; durationout : 750; delayin : 400; showuntil : 4200;">
+                	more than 300
+                </h1>
+                <h1 class="ls-s4 ls-heading" style="position: absolute; top:184px; left: 532px; slidedirection : bottom; slideoutdirection : left; durationin : 1000; durationout : 750; delayin : 700; showuntil : 4200;">
+                	types of icon
+                </h1>
+                <p class="ls-s4 ls-text" style="position: absolute; top:252px; left: 532px; slidedirection : bottom; slideoutdirection : left; durationin : 1000; durationout : 750; delayin : 1000; showuntil : 4200;">Batch icon from - http://adamwhitcroft.com/batch/ </p>
+            </div>
+            
+            <div class="ls-layer">
+            	<!--LayerSlider background-->								
+                <img class="ls-bg" src="images/slideshow/ls_bg2.jpg" alt=""> 
+                
+                <h5 class="ls-s2 ls-heading-box" style="position: absolute; top:140px; left: 70px; slidedirection : top; slideoutdirection : left; durationin : 1000; durationout : 750; delayin : 1300; showuntil : 3000;">
+                	Endymion is Responsive
+                </h5>
+                <h5 class="ls-s2 ls-heading-box" style="position: absolute; top:180px; left: 70px; slidedirection : top; slideoutdirection : left; durationin : 1000; durationout : 750; delayin : 1000; showuntil : 3000;">
+                	Built with HTML5 and CSS3
+                </h5>
+                <h5 class="ls-s2 ls-heading-box" style="position: absolute; top:220px; left: 70px; slidedirection : top; slideoutdirection : left; durationin : 1000; durationout : 750; delayin : 700; showuntil : 3000;">
+                	Simple &amp; Clean design
+                </h5>
+                <h5 class="ls-s2 ls-heading-box" style="position: absolute; top:260px; left: 70px; slidedirection : top; slideoutdirection : left; durationin : 1000; durationout : 750; delayin : 400; showuntil : 3000;">
+                	Powered with LayerSlider
+                </h5>
+                
+                <img class="ls-s2" src="images/slideshow/ls_img2.png" alt="" style="position: absolute; top: 72px; left: 500px; slidedirection : bottom; slideoutdirection : right; delayin : 400; showuntil : 3000;">
+                <img class="ls-s2" src="images/slideshow/ls_img3.png" alt="" style="position: absolute; top: 156px; left: 400px; slidedirection : bottom; slideoutdirection : right; delayin : 900; showuntil : 3000;">
+                <img class="ls-s2" src="images/slideshow/ls_img4.png" alt="" style="position: absolute; top: 223px; left: 530px; slidedirection : bottom; slideoutdirection : right; delayin : 700; showuntil : 3000;">
+            </div>
+            
+            <div class="ls-layer">
+            	<!--LayerSlider background-->								
+                <img class="ls-bg" src="images/slideshow/ls_bg3.jpg" alt="">        
+                                                
+                <img class="ls-s2" src="images/slideshow/ls_img7.png" alt="" style="position: absolute; top: 114px; left: 205px; slidedirection : bottom; slideoutdirection : bottom; delayin : 700; showuntil : 3000;">
+                <img class="ls-s2" src="images/slideshow/ls_img6.png" alt="" style="position: absolute; top: 154px; left: 115px; slidedirection : bottom; slideoutdirection : bottom; delayin : 900; showuntil : 3000;">
+                <img class="ls-s2" src="images/slideshow/ls_img8.png" alt="" style="position: absolute; top: 150px; left: 605px; slidedirection : bottom; slideoutdirection : bottom; delayin : 600; showuntil : 3000;">
+                <img class="ls-s2" src="images/slideshow/ls_img5.png" alt="" style="position: absolute; top: 79px; left: 385px; slidedirection : bottom; slideoutdirection : bottom; delayin : 400; showuntil : 3000;">
+                <h2 class="ls-s3 ls-heading-box" style="position: absolute; top:45px; left: 235px; slidedirection : top; slideoutdirection : bottom; durationin : 1000; durationout : 750; delayin : 1300; showuntil : 3500;">
+                	Be a Superhero in Your Business.
+                </h2>                
+            </div>
+            
+            <div class="ls-layer">
+            	<!--LayerSlider background-->								
+                <img class="ls-bg" src="images/slideshow/ls_bg4.jpg" alt="">    
+                
+                
+                <div class="ls-s2 ls-video" style="position: absolute; top:87px; left: 75px; slidedirection : top; slideoutdirection : bottom; durationin : 1000; durationout : 750; delayin : 400;">
+                	<iframe src="http://www.youtube.com/embed/k97hHwx3WJ0" width="428" height="269" seamless></iframe>
+                </div>                
+                <h3 class="ls-s3 ls-heading" style="position: absolute; top:106px; left: 557px; slidedirection : bottom; slideoutdirection : top; durationin : 1000; durationout : 750; delayin : 400; ">
+                	Embed some video ?
+                </h3>
+                <h3 class="ls-s4 ls-heading" style="position: absolute; top:138px; left: 557px; slidedirection : bottom; slideoutdirection : top; durationin : 1000; durationout : 750; delayin : 700; delayout : 100;">
+                	Why not, Go Ahead
+                </h3>
+                <p class="ls-s3 ls-text" style="position: absolute; top:192px; left: 560px; slidedirection : bottom; slideoutdirection : top; durationin : 1000; durationout : 750; delayin : 1000; delayout : 200;">Lorem ipsum dolor sit amet consectet adipisicing elite sedo eiusmod tempor incididunt utel labore et dolore magna aliqua utenim ad minim veniam quis</p>
+                <a class="ls-s4 button medium grey" style="position: absolute; top:290px; left: 560px; slidedirection : bottom; slideoutdirection : top; durationin : 1000; durationout : 750; delayin : 1300; delayout : 300;" href="#">Let's start something</a>
+            </div>   
+    
+        </div>                    
+    </section>    
+    <!-- slideshow end here -->
+    
+    <!-- content section start here -->
+    <section id="special-content-wrapper">
+    	<div class="row mobile3row-content">
+            <div class="four columns mobile3col-content">
+            	<div class="box-icon img-left">
+            		<span aria-hidden="true" class="fa fa-angle-double-up"></span>
+                </div>            	
+                <h5>Easy and Powerfull</h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem quelauti</p>
+            </div>
+            <div class="four columns mobile3col-content">
+                <div class="box-icon img-left">
+            		<span aria-hidden="true" class="fa fa-chevron-circle-down"></span>
+                </div>
+                <h5>Anytime and Anywhere</h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem quelauti</p>
+            </div>
+            <div class="four columns mobile3col-content">
+                <div class="box-icon img-left">
+            		<span aria-hidden="true" class="fa fa-hospital-o"></span>
+                </div>
+                <h5>Grow Your Business</h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem quelauti</p>
+            </div>
+        </div>
+    </section>
+    <!-- content section end here -->
+    
+    <!-- content section start here -->
+    <section id="content-wrapper">
+    	<div class="row">
+        	<div class="twelve columns text-center">
+            	<h4>Who Needs <span class="title-blue">ENDYMION</span> design?</h4>
+                <p class="big-text">Restaurants, Musicians, Retail Shop, Web Agencys, Non-Profits, and much more...</p>
+            </div>
+        </div>
+        
+        <div class="row mobile3row-content">
+        	<div class="four columns text-center mobile3col-content">
+            	<div class="shaped circle">
+                    <img src="images/sample_images/people1.jpg" alt="" />
+                </div>
+                <p>Jeffery Hartman<br/><span class="title-blue">Casa D'Oro Restaurant</span></p>
+            </div>
+            <div class="four columns text-center mobile3col-content">                 
+                <div class="shaped circle">
+                    <img src="images/sample_images/people2.jpg" alt="" />
+                </div>
+                <p>Julia Cepeda<br/><span class="title-blue">Plot Arrows Guitarist</span></p>
+            </div>
+            <div class="four columns text-center mobile3col-content">
+            	<div class="shaped circle">
+                    <img src="images/sample_images/people3.jpg" alt="" />
+                </div>
+                <p>Ryan Wheeler<br/><span class="title-blue">Modern Home Projects</span></p>
+            </div>
+        </div>
+        
+        <div class="row">
+        	<div class="twelve columns">
+            	<div class="center-btn">from our blog</div>
+            	<div class="divider"></div>
+            </div>
+        </div>
+        
+        <div class="row mobile3row-content">
+        	<div class="four columns mobile3col-content">
+            	<div class="box-flip">
+                	<div class="blog-title">
+                        <p>January 11, 2013</p>
+                        <h6>Celebrate a New Year 2013</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectet adipisicing elite sedo eiusmod tempor incididunt utel labore et dolore magna aliqua ut enim adinim veniam quis</p>
+                    <a class="continue-btn">Continue Reading</a>
+                    <div class="clear"></div>
+                </div>	
+            </div>
+            <div class="four columns mobile3col-content">                 
+             	<div class="box-flip">
+                	<div class="blog-title">
+                        <p>January 7, 2013</p>
+                        <h6>Holiday this year come early</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectet adipisicing elite sedo eiusmod tempor incididunt utel labore et dolore magna aliqua ut enim adinim veniam quis</p>
+                    <a class="continue-btn">Continue Reading</a>
+                    <div class="clear"></div>
+                </div>   
+            </div>
+            <div class="four columns mobile3col-content">
+            	<div class="box-flip">
+                	<div class="blog-title">
+                        <p>January 3, 2013</p>
+                        <h6>Will the World end tommorow</h6>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectet adipisicing elite sedo eiusmod tempor incididunt utel labore et dolore magna aliqua ut enim adinim veniam quis</p>
+                    <a class="continue-btn">Continue Reading</a>
+                    <div class="clear"></div>
+                </div>	
+            </div>
+        </div>        
+         
+    </section>
+    <!-- content section end here -->
+    
+    <!-- footer section start here -->
+    <footer>
+    	<div class="footer-logo">
+            <img src="images/logo_footer.png" alt="" class="retina" />
+            <p>Endymion, Inc.<br/>A web design studio in Jakarta, Indonesia.<br/>Copyright &copy; 2013. All rights reserved</p>
+        </div>
+        <div class="footer-column">
+        	<h6>Ready to get started ?</h6>
+            <p>Fill out our simple <span class="title-blue">step-by-step Project Planner</span> to get the ball rolling.</p>
+        </div>
+        <div class="footer-column">
+        	<h6>Be a Socials</h6>            
+            <div class="social-footer">
+                <!--[if IE]>
+                    <iframe id="facebookIframe-single" 
+                        src="http://www.facebook.com/plugins/like.php?href=http://www.indonez.com/&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;action=like&amp;colorscheme=light" 
+                        style="border:none; overflow:hidden; width:200px; height:45px;" 
+                        allowTransparency="true">
+                    </iframe>
+                <![endif]-->
+                <!--[if !IE]>-->
+                    <iframe id="facebookIframe-single" 
+                        src="http://www.facebook.com/plugins/like.php?href=http://www.indonez.com/&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;action=like&amp;colorscheme=light" 
+                        style="border:none; overflow:hidden; width:200px; height:45px;" >
+                    </iframe>
+                <!--<![endif]-->
+            </div>
+            
+            <div class="social-footer">
+            <a href="https://twitter.com/indoneztheme" class="twitter-follow-button" data-show-count="false">Follow @indoneztheme</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+            
+        </div>
+        <div class="footer-column">
+        	<h6>Corporate resources</h6>
+            <ul class="footer-list-link">
+            	<li><a href="#">Knowledge base</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Carrer</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </footer>
+    <!-- footer section end here -->
+    
+</div>
+
+<script>$('#noscript').remove();</script>
+</body>
+</html>
